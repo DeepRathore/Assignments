@@ -1,0 +1,109 @@
+ h1{
+
+text-shadow: 2px 2px dodgerblue;
+background-color:Gainsboro;
+
+font-size:40px;
+
+}
+	 
+body {
+	background-image :linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('wallpaper.png');
+	background-size: cover;
+	height :100vh;
+}
+
+
+ul {
+	float : right;
+	list-style-type:none;
+	margin-top :25px;
+}
+ul li{
+	display :inline-block;
+	
+}
+ul li a {
+	display: block;
+	color :	white;
+	text-decoration :none ;	
+	padding : 8px 25px;
+	font-size :25px;
+	border : 1px solid white;	
+	float :right;
+	margin-top :0px;
+}
+
+
+li a:hover{
+background-color:white; 
+transition : 0.6s ease;
+
+}
+.logo {
+	
+	width :150px ;
+	height : auto;
+	float : left ;
+	
+	
+	
+}
+.title {
+	position : absolute ;
+	top :50% ;
+	left :50%;
+	transform :translate(-50%,-50%);
+	
+}
+pre {
+	
+	
+	font-size : 80px;
+	font-family : 	;
+	color: 	white;
+	/*border : 1px solid 	white;*/
+	text-shadow: 2px 2px dodgerblue;
+}
+.head{
+	max-width :1200px;
+	margin :auto;
+	
+	
+}
+
+.buttons{
+	
+	font-size :30px;
+	text-decoration :none ;	
+	position : absolute ;
+	top :90% ;
+	left :40%;
+	display : inline-block;
+	background-color :transparent;
+	transition : 0.6s ease;
+	
+   	
+	color : white;
+}
+.btn {
+border : 1px solid white; 
+padding : 10px 30px;
+text-decoration :none;
+color : #fff;
+}
+.buttons a:visited {
+	color :white;
+	 text-decoration: none;	
+	
+}
+.buttons a{
+	display :inline-block;
+}
+
+.buttons :hover{
+	
+	
+	background-color :black;
+	
+}
