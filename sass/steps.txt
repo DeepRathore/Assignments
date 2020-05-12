@@ -1,0 +1,9 @@
+Steps for sass -
+
+1.npm install node-sass --save-dev //sass folder
+2.open in text editor.
+3. add style.css and create a folder with sassFiles and put main.scss.
+4. add "scripts": {
+    "compile:sass" :"node-sass sassFiles/main.scss css/style.css"
+  },
+  5. Go to command prompt- npm run compile:sass
