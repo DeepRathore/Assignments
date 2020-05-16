@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calender</title>
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/calcultion.js"></script>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+	<body onload="renderDate()">
+    <div class="wrapper">
+        <div class="calendar">
+            <div class="month">
+                <!--for previos sign-->
+                <div class="prev" onclick="moveDate('prev')">
+                    <!--span signs for previous and next-->
+                    <span>&#10094;</span>
+                </div>
+                <div>
+                    <h2 id="month"></h2>
+                    <p id="date_str"></p>
+                </div>
+                <!--for previos sign-->
+                <div class="next" onclick="moveDate('next')">
+                    <span>&#10095;</span>
+                </div>
+            </div>
+            <!--for days of week-->
+            <div class="weekdays">
+                <p id="getDays"></p>
+            </div>
+            
+            <!--to show the dates in cell-->
+            <div class="days">
+                <p id="days"></p>
+            </div>
+
+            <!--select for months-->
+            <select name="month" id="getMonth">
+                <option value="">Select Month</option>
+            </select>
+ 
+            <!--select for year-->
+            <select class="year">
+                <option>Select Year</option>
+            </select>
+        </div>
+     </div>
+</body>
+</html>
