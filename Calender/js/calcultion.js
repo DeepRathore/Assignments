@@ -1,4 +1,6 @@
 var currentday = new Date();       //object to store current date
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+var days =["Sun","Mon","Tue","Wed","Thur","Fri","Sat"];
 
 function renderDate() {             //in current day object already the current date is store
     currentday.setDate(1);          //setting the date to 1
@@ -19,13 +21,13 @@ function renderDate() {             //in current day object already the current 
     var prevDate = new Date(currentday.getFullYear(),currentday.getMonth(),0).getDate();
 
     //array to show all months in the header part
-   var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
    
     //showing of months in header
     document.getElementById("month").innerHTML = months[currentday.getMonth()];
+    document.getElementById("year").innerHTML= currentday.getFullYear();
     
     //for showing of string date
-    document.getElementById("date_str").innerHTML = currentday.toDateString();
+    
     
     var cells = ""; //to store numbers of previous month on same page callender
         for (var x = day; x > 0; x--) {
@@ -56,7 +58,6 @@ function moveDate(direction) {
 
 //function to show days
 $(function(){
-    var days =["Sun","Mon","Tue","Wed","Thur","Fri","Sat"];
     var length = days.length;  //storing of length
     var text="";
     for(var i = 0; i<=length-1;i++){
@@ -78,23 +79,27 @@ $(function(){
 
 //FUNCTION to select Months
 $(function() {
-    var monthArray = new Array(); //creation of array
-    monthArray[0] = "January";
-    monthArray[1] = "February";
-    monthArray[2] = "March";
-    monthArray[3] = "April";
-    monthArray[4] = "May";
-    monthArray[5] = "June";
-    monthArray[6] = "July";
-    monthArray[7] = "August";
-    monthArray[8] = "September";
-    monthArray[9] = "October";
-    monthArray[10] = "November";
-    monthArray[11] = "December";
-for(m = 0; m <= 11; m++) { //for for accessing and showing the arraylist
+    for(var m = 0; m <= 11; m++) { //for for accessing and showing the arraylist
     var optn = document.createElement("OPTION");
-    optn.text = monthArray[m];
-     document.getElementById('getMonth').options.add(optn);
+    optn.text = months[m];
+     document.getElementById('mon').options.add(optn);
 }
 
 });
+
+$(function() {
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date+' '+"&nbsp"+time;
+    document.getElementById('date').innerHTML =dateTime;
+});
+
+/*function myDate() {
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date+' '+time;
+    document.getElementById('date').innerHTML =dateTime;
+
+}*/

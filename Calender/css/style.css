@@ -6,10 +6,11 @@ ul {
   list-style-type: none; }
 
 body {
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('wall7.jpg');
+  background-size:cover ; }
 
 .wrapper {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("wall7.jpg");
   width: 100vw;
   height: 100vh;
   display: flex; }
@@ -27,17 +28,23 @@ body {
   width: 100%;
   padding: 40px 30px;
   text-align: center;
-  background-color: #2ecc71;
+  background-color:#3ae374;
   color: #fff; }
 
 .weekdays {
   background-color: #27ae60;
   color: yellow;
   padding: 7px 0;
-  display: flex; }
+  display: flex; 
+  
+  }
 
 #getDays {
-  word-spacing: 27px; }
+  display :block;
+  word-spacing: 25px;
+  text-align :center; 
+  margin-left :27px;
+  }
 
 .days {
   font-weight: 300;
@@ -66,6 +73,16 @@ body {
   cursor: pointer;
   background-color: #dfe6e9; }
 
+.current-string {
+  background-color :#27ae60;
+  color : yellow;
+  text-align:center;
+  border :1 px solid green;
+  height :60px;
+  padding :15px;
+
+}
+
 .prev,
 .next {
   display: flex;
@@ -75,8 +92,9 @@ body {
   height: 50px;
   border-radius: 50%;
   font-size: 23px;
-  background-color: rgba(0, 0, 0, 0.1);
-  transition: all 0.4s; }
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.4s; 
+}
 
 .prev:hover,
 .next:hover {
