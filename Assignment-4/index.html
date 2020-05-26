@@ -3,7 +3,9 @@
 
 <head>
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -14,27 +16,32 @@
         </header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Create</a></li>
-                <li><a href="#">Latest News</a></li>
-                <li><a href="#">Contact</a></li>
-                <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Page
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Element</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Blog Details</a>
-                            <a href="#">Categori Details</a>
+                <div class="topnav" id="myTopnav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Create</a></li>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Page
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Element</a>
+                                <a href="#">Blog</a>
+                                <a href="#">Blog Details</a>
+                                <a href="#">Categori Details</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
+                    </li>
+                    <a> <i class="fa fa-bars" id="bar"></i>
+                    </a>
+                </div>
             </ul>
             <span class="glyphicon glyphicon-search" id="search">
         </nav>
         <div class="trendingNowPart">
             <button type="button" id="trending">TRENDING NOW</button>
+            <p id="mobile">Bangladesh dolor sit amet, c_</p>
             <p id="trend-text"> Bangladesh dolor sit amet, c_ </p>
             <div class="banner">
                 <img src="img/trending/trending_top.jpg" alt="banner_img" class="banner-main">
@@ -46,12 +53,12 @@
                 <div>
                     <img src="img/trending/trending_bottom1.jpg" alt="lifestyle">
                     <p>LIFESTYLE</p>
-                    <h2>Get The Illusion Of The Fuller<br>Lashes By "Maskng."</h2>
+                    <h2>Get The Illusion Of The Fuller Lashes By "Maskng."</h2>
                 </div>
                 <div class="sports">
                     <img src="img/trending/trending_bottom2.jpg" alt="lifestyle" class="lifestyle">
                     <p id="sp">SPORTS</p>
-                    <h2>Get The Illusion Of The Fuller<br>Lashes By "Maskng."</h2>
+                    <h2>Get The Illusion Of The Fuller Lashes By "Maskng."</h2>
                 </div>
                 <div class="Travels">
                     <img src="img/trending/trending_bottom3.jpg" alt="lifestyle" id="lifestyle">
@@ -108,18 +115,21 @@
                 <li><a href="#">Technology</a></li>
             </ul>
             <div class="image-part">
-                <img src="img/news/whatNews1.jpg" alt="news1" id="first1">
-                <div class="message">
-                    <p>NIGHT PARTY</p>
-                    <h2>Welcome To The Best Model Winner Contest</h2>
+                <div class="first1">
+                    <img src="img/news/whatNews1.jpg" alt="news1" id="first1">
+                    <div class="message">
+                        <p>NIGHT PARTY</p>
+                        <h2>Welcome To The Best Model Winner Contest</h2>
+                    </div>
                 </div>
-                <img src="img/news/whatNews2.jpg" alt="news1" id="pic2">
-                <div class="message1">
-                    <p>NIGHT PARTY</p>
-                    <h2>Welcome To The Best Model Winner Contest</h2>
+                <div class="second">
+                    <img src="img/news/whatNews2.jpg" alt="news1" id="pic2">
+                    <div class="message1">
+                        <p>NIGHT PARTY</p>
+                        <h2>Welcome To The Best Model Winner Contest</h2>
+                    </div>
                 </div>
                 <img src="img/news/whatNews3.jpg" alt="news1" id="pic3">
-
                 <div class="message2">
                     <p>NIGHT PARTY</p>
                     <h2>Welcome To The Best Model Winner Contest</h2>
@@ -148,6 +158,21 @@
             <h1>
                 <img src="img/news/news_card.jpg" alt="card" id="card">
             </h1>
+        </div>
+        <h1 id="h1">Weekly Top News</h1>
+        <div class="Mobile-Weekly-Top">
+            <div class="part1">
+                <img src="img/news/weekly2News1.jpg" id="photo1">
+                <p id="message">CORPORATE</p>
+                <p id="date">25 JAN 2020</p>
+                <h2>Welcome To The Best Model Winner Contest</h2>
+            </div>
+            <div class="part2">
+                <img src="img/news/weekly2News2.jpg" id="photo2">
+                <p id="message1">EVENT NIGHT</p>
+                <p id="date">25 JAN 2020</p>
+                <h2>Welcome To The Best Model Winner Contest</h2>
+            </div>
         </div>
     </div>
 </body>
