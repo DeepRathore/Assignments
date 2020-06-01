@@ -2,6 +2,7 @@ var currentday = new Date();       //object to store current date
 var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 var days =["Sun","Mon","Tue","Wed","Thur","Fri","Sat"];
 
+
 function renderDate() {             //in current day object already the current date is store
     currentday.setDate(1);          //setting the date to 1
     var day = currentday.getDay();  //it will return the day of 1 date(example 1 is on 6th day(saturday))
@@ -56,16 +57,22 @@ function moveDate(direction) {
     renderDate();
 }
 
-//function to show days
-$(function(){
-    var length = days.length;  //storing of length
-    var text="";
-    for(var i = 0; i<=length-1;i++){
-         text += days[i] + "&nbsp&nbsp";
-}
-   document.getElementById("getDays").innerHTML =text;  //for printing days in string
-});
+//function for dropdown months
 
+function selectmonth(mon) {
+    const month= months.indexOf(mon.options[mon.selectedIndex].text)
+    currentday.setMonth(month);
+    renderDate();
+
+}
+
+//function for dropdown year selection
+
+function selectYear(yearSelection) {
+    currentday.setFullYear(yearSelection.options[yearSelection.selectedIndex].text);
+    renderDate();
+
+}
 
 //function to select year
 $(function(){
@@ -87,6 +94,8 @@ $(function() {
 
 });
 
+//function to show date and time in footer part 
+
 $(function() {
     var today = new Date();
     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
@@ -95,11 +104,16 @@ $(function() {
     document.getElementById('date').innerHTML =dateTime;
 });
 
-/*function myDate() {
-    var today = new Date();
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    var dateTime = date+' '+time;
-    document.getElementById('date').innerHTML =dateTime;
 
-}*/
+//function to show days
+$(function(){
+    var length = days.length;  //storing of length
+    var text="";
+    for(var i = 0; i<=length-1;i++){
+         text += days[i] + "&nbsp&nbsp";
+}
+   document.getElementById("getDays").innerHTML =text;  //for printing days in string
+});
+
+
+

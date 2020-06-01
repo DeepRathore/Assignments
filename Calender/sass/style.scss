@@ -13,8 +13,8 @@ body {
 
   
 .wrapper {
-	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('wall7.jpg');
-	width: 100vw;
+  background-color : rgba(0, 0, 0, 0.5); 
+	width: 100%;
 	height: 100vh;
 	display: flex;
  }
@@ -45,9 +45,12 @@ body {
   display: flex;
 }
 
-#getDays {
-  word-spacing :27px;
+.weekdays {
+ #getDays {
+   padding-left :28px;
+   word-spacing :24.2px;
 
+ }
 }
 .days {
   font-weight: 300;
@@ -60,6 +63,7 @@ body {
 .days div {
     text-align: center;
     width: 14.28%;
+    
 }
 
 .days div {
@@ -138,6 +142,8 @@ select {
         height :500px;
 
         }
+
+
         }
 
     }
