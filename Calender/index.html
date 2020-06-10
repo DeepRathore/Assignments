@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Calender</title>
-     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <title>Calender</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="js/calcultion.js"></script>
-	<link href="css/style.css" rel="stylesheet">
+    <script src="js/calcultion.js"></script>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-	<body onload="renderDate()">
+<body onload="renderDate()">
     <div class="wrapper">
-
         <div class="calendar">
-
             <div class="month">
                 <!--for previos sign-->
                 <div class="prev" onclick="moveDate('prev')">
@@ -33,30 +32,24 @@
             <div class="weekdays">
                 <p id="getDays"></p>
             </div>
-            
             <!--to show the dates in cell-->
             <div class="days">
                 <p id="days"></p>
             </div>
-
             <!--select for months-->
-            <select name="month" id="mon" onChange=
-            "selectmonth(this);">
+            <select name="month" id="mon" onChange="selectmonth(this);">
                 <option value="">Select Month</option>
             </select>
- 
             <!--select for year-->
             <select class="year" onChange="selectYear(this);">
                 <option>Select Year</option>
             </select>
-
-            <div class="current-string" >
-            <h3 id="date"></h3>
-            Have a happy day
+            <div class="current-string">
+                <h3 id="date"></h3>
+                Have a happy day
+            </div>
         </div>
-        </div>
-        
-     </div>
-        
+    </div>
 </body>
+
 </html>
