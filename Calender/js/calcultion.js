@@ -101,7 +101,7 @@ $(document).ready(function() {
     var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     var dateTime = date + ' ' + "&nbsp" + time;
-    document.getElementById('date').innerHTML = dateTime;
+    $("#date").html(dateTime); 
 });
 
 
@@ -112,5 +112,5 @@ $(document).ready(function() {
     for (var i = 0; i <= length - 1; i++) {
         text += days[i] + "&nbsp&nbsp";
     }
-    document.getElementById("getDays").innerHTML = text; //for printing days in string
+    $("#getDays").html(text); //for printing days in string
 });
