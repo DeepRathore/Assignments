@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <img src="img/logo/logo.png" alt="header_img" class="logo " id="logo">
+        <img src="img/hero/header_card.jpg" alt="header_img" class="img-fluid float-right mr-5 mt-2 card">
+        <nav class="navbar navbar-expand-md sticky-top bg-light">
+            <div class="container">
+                <button id="nav-btn" class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarDiv">
+                    <span class="navbar-toggler-icon" id="icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarDiv">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home" data-toggle="collapse" data-target=".navbar-collapse.show">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#create" data-toggle="collapse" data-target=".navbar-collapse.show">Create</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#latest" data-toggle="collapse" data-target=".navbar-collapse.show">Latest News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="dropdown">
+                                <button class="dropbtn" data-toggle="collapse" data-target="#dropContent"><span>page</span>
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                                <div class="collapse navbar-collapse " id="dropContent">
+                                    <div class="dropdown-content">
+                                        <a class="nav-link" href="#">Element</a>
+                                        <a class="nav-link" href="#">Blog</a>
+                                        <a class="nav-link" href="#">Blog Details</a>
+                                        <a class="nav-link" href="#">Categori Details</a>
+                                    </div>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search-container p-4">
+                <div class="dropdown1">
+                    <span id="search-btn"><i class="fa fa-search bar"></i></span>
+                    <span class="dropdown-content1">
+                        <input type="text" placeholder="search..." name="search" class="text">
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <div class="trendingNowPart col-sm-12">
+            <button type="button" class="btn btn-danger px-3 tradingbtn">TRENDING NOW</button>
+            <h1 id="heading"></h1>
+        </div>
+        <div class="bottom-right ">
+            <div class="container">
+                <div class="row banner">
+                    <div class="col-lg-9  col-sm-12 ">
+                        <img src="img/trending/trending_top.jpg" alt="banner_img" class="img-fluid mt-5" id="banner">
+                        <div class="con">
+                            <button type="button" class="btn appetizer">APPETIZER</button>
+                            <h1>Welcome To The Best Model Winner Contest At Look Of The Year
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row  mt-4 w-75  ">
+                    <div class="col-lg-9 col-lg-12 d-flex justify-content-between bottom-images">
+                        <div>
+                            <img src="img/trending/trending_bottom1.jpg" alt="lifestyle">
+                            <p>LIFESTYLE</p>
+                            <h2>Get The Illusion Of The Fuller Lashes By "Maskng."</h2>
+                        </div>
+                        <div class="sports">
+                            <img src="img/trending/trending_bottom2.jpg" alt="lifestyle" class="lifestyle">
+                            <p style="background-color :#dcfcce;">SPORTS</p>
+                            <h2>Get The Illusion Of The Fuller Lashes By "Maskng."</h2>
+                        </div>
+                        <div class="Travels">
+                            <img src="img/trending/trending_bottom3.jpg" alt="lifestyle" id="lifestyle">
+                            <p style="background-color :#f9f4c0;">TRAVELS</p>
+                            <h2>Welcome To The Best Model Winner Contest<br></h2>
+                        </div>
+                    </div>
+                    <div class="right-images">
+                        <div class="concert">
+                            <img src="img/trending/right1.jpg" alt="concert">
+                            <div class="text">
+                                <p>CONCERT</p>
+                                <h2>Welcome To The Best Model Winner Contest</h2>
+                            </div>
+                        </div>
+                        <div class="sea-beach">
+                            <img src="img/trending/right2.jpg" alt="sea-beach">
+                            <div class="text">
+                                <p style="background-color :#d1fafb;">SEA BEACH</p>
+                                <h2>Welcome To The Best Model Winner Contest</h2>
+                            </div>
+                        </div>
+                        <div class="bike-show">
+                            <img src="img/trending/right3.jpg" alt="bike-show">
+                            <div class="text">
+                                <p style="background-color :#dcfcce;">BIKE SHOW</p>
+                                <h2>Welcome To The Best Model Winner Contest</h2>
+                            </div>
+                        </div>
+                        <div class="see-beach">
+                            <img src="img/trending/right4.jpg" alt="see-beach">
+                            <div class="text">
+                                <p style="background-color :#f9f4c0;">SEE BEACH</p>
+                                <h2>Welcome To The Best Model Winner Contest</h2>
+                            </div>
+                        </div>
+                        <div class="skeping">
+                            <img src="img/trending/right5.jpg" alt="skeping">
+                            <div class="text">
+                                <p>SKEPING</p>
+                                <h2>Welcome To The Best Model Winner Contest</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div id="image-Carousel" class="carousel slide" data-ride="carousel">
+                    <h1 id="week">Weekly top News</h1>
+                    <ol class="carousel-indicators image-indicators indiImage">
+                        <li data-target="#image-Carousel" data-slide-to="0" class="active
+                        "></li>
+                        <li data-target="#image-Carousel" data-slide-to="1"></li>
+                        <li data-target="#image-Carousel" data-slide-to="2"></li>
+                        <li data-target="#image-Carousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="img/news/weeklyNews1.jpg" alt="news1" class="img-fluid" width="1100" height="500">
+                                    <div class="text-area">
+                                        <p id="strikelogo">STRIKE</p>
+                                        <h2>Welcome To The Best Model Winner Contest</h2>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="img/news/weeklyNews2.jpg" alt="news1" class="img-fluid" width="1100" height="500">
+                                    <div class="text-area">
+                                        <p id="strikelogo">STRIKE</p>
+                                        <h2>Welcome To The Best Model Winner Contest</h2>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="img/news/weeklyNews3.jpg" alt="news1" class="img-fluid" width="1100" height="500">
+                                    <div class="text-area">
+                                        <p id="strikelogo">STRIKE</p>
+                                        <h2>Welcome To The Best Model Winner Contest</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="img/news/weeklyNews2.jpg" alt="news1" class="img-fluid" width="1100" height="500">
+                                    <div class="text-area">
+                                        <p id="strikelogo">STRIKE</p>
+                                        <h2>Welcome To The Best Model Winner Contest</h2>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="img/news/weeklyNews3.jpg" alt="news1" class="img-fluid" width="1100" height="500">
+                                    <div class="text-area">
+                                        <p id="strikelogo">STRIKE</p>
+                                        <h2>Welcome To The Best Model Winner Contest</h2>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="img/news/weeklyNews1.jpg" alt="news1" class="img-fluid" width="1100" height="500">
+                                    <div class="text-area">
+                                        <p id="strikelogo">STRIKE</p>
+                                        <h2>Welcome To The Best Model Winner Contest</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="img/news/weeklyNews1.jpg" alt="news1" class="img-fluid" width="1100" height="500">
+                                    <div class="text-area">
+                                        <p id="strikelogo">STRIKE</p>
+                                        <h2>Welcome To The Best Model Winner Contest</h2>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="img/news/weeklyNews2.jpg" alt="news1" class="img-fluid" width="1100" height="500">
+                                    <div class="text-area">
+                                        <p id="strikelogo">STRIKE</p>
+                                        <h2>Welcome To The Best Model Winner Contest</h2>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="img/news/weeklyNews3.jpg" alt="news1" class="img-fluid" width="1100" height="500">
+                                    <div class="text-area">
+                                        <p id="strikelogo">STRIKE</p>
+                                        <h2>Welcome To The Best Model Winner Contest</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="img/news/weeklyNews3.jpg" alt="news1" class="img-fluid" width="1100" height="500">
+                                    <div class="text-area">
+                                        <p id="strikelogo">STRIKE</p>
+                                        <h2>Welcome To The Best Model Winner Contest</h2>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="img/news/weeklyNews2.jpg" alt="news1" class="img-fluid" width="1100" height="500">
+                                    <div class="text-area">
+                                        <p id="strikelogo">STRIKE</p>
+                                        <h2>Welcome To The Best Model Winner Contest</h2>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="img/news/weeklyNews1.jpg" alt="news1" class="img-fluid" width="1100" height="500">
+                                    <div class="text-area">
+                                        <p id="strikelogo">STRIKE</p>
+                                        <h2>Welcome To The Best Model Winner Contest</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 main">
+                <h1>Whats New</h1>
+                <div class="whats-new">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#" class="nav-link ">All</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Lifestyle</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Travel</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Fasion</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Sports</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" id="tech">Technology</a></li>
+                    </ul>
+                    <div class="col-lg-7 col-sm-12">
+                        <div class="image-part1">
+                            <div class="picture1">
+                                <img src="img/news/whatNews1.jpg" alt="news1">
+                                <div class="message1">
+                                    <p>NIGHT PARTY</p>
+                                    <h2>Welcome To The Best Model Winner Contest</h2>
+                                </div>
+                            </div>
+                            <div class="picture2">
+                                <img src="img/news/whatNews2.jpg" alt="news1" id="pic2">
+                                <div class="message2">
+                                    <p>NIGHT PARTY</p>
+                                    <h2>Welcome To The Best Model Winner Contest</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-part2">
+                            <div class="picture1">
+                                <img src="img/news/whatNews3.jpg" alt="news1">
+                                <div class="message1">
+                                    <p>NIGHT PARTY</p>
+                                    <h2>Welcome To The Best Model Winner Contest</h2>
+                                </div>
+                            </div>
+                            <div class="picture2">
+                                <img src="img/news/whatNews4.jpg" alt="news1" id="pic2">
+                                <div class="message2">
+                                    <p>NIGHT PARTY</p>
+                                    <h2>Welcome To The Best Model Winner Contest</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-lg-12">
+                        <div class="follow">
+                            <h1 id="follow">Follow Us</h1>
+                            <div class="first-image-part">
+                                <img src="img/news/icon-fb.png" alt="fb" id="fb">
+                                <div class="message">
+                                    <big>8,045 <h4>Fans</h4>
+                                    </big>
+                                </div>
+                                <img src="img/news/icon-tw.png" alt="insta" id="insta">
+                                <div class="message">
+                                    <big>8,045 <h4>Fans</h4>
+                                    </big>
+                                </div>
+                            </div>
+                            <div class="second-image-part">
+                                <img src="img/news/icon-ins.png" alt="fb" id="fb">
+                                <div class="message">
+                                    <big>8,045 <h4>Fans</h4>
+                                    </big>
+                                </div>
+                                <img src="img/news/icon-yo.png" alt="insta" id="insta">
+                                <div class="message">
+                                    <big>8,045 <h4>Fans</h4>
+                                    </big>
+                                </div>
+                            </div>
+                            <img src="img/news/news_card.jpg" alt="card" id="card" class="card">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid video">
+            <div class="row">
+                <div class="col col-md-10 col-lg-8 offset-lg-2">
+                    <div id="videoCarousel1" class="carousel slide" data-interval="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#videoCarousel1" data-slide-to="0" class="active">
+                                <img src="https://pbs.twimg.com/profile_images/905183271046193153/q_P1KBUJ_400x400.jpg" class="img-fluid" />
+                            </li>
+                            <li data-target="#videoCarousel1" data-slide-to="1">
+                                <img src="https://pbs.twimg.com/profile_images/905183271046193153/q_P1KBUJ_400x400.jpg" class="img-fluid" />
+                            </li>
+                            <li data-target="#videoCarousel1" data-slide-to="2">
+                                <img src="https://pbs.twimg.com/profile_images/905183271046193153/q_P1KBUJ_400x400.jpg" class="img-fluid" />
+                            </li>
+                            <li data-target="#videoCarousel1" data-slide-to="3">
+                                <img src="https://pbs.twimg.com/profile_images/905183271046193153/q_P1KBUJ_400x400.jpg" class="img-fluid" />
+                            </li>
+                            <li data-target="#videoCarousel1" data-slide-to="4">
+                                <img src="https://pbs.twimg.com/profile_images/905183271046193153/q_P1KBUJ_400x400.jpg" class="img-fluid" />
+                            </li>
+                            <li data-target="#videoCarousel1" data-slide-to="5">
+                                <img src="https://pbs.twimg.com/profile_images/905183271046193153/q_P1KBUJ_400x400.jpg" class="img-fluid" />
+                            </li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6hgVihWjK2c?rel=0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/84910153?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oiKj0Z_Xnjc" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/F-1weFCiYBA" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6pxRHBw-k8M" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IlvjAHlTjAY" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="javascript:void(0);" onClick="slideCarousels(['videoCarousel1','videoCarouse2'],'prev')">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="javascript:void(0);" onClick="slideCarousels(['videoCarousel1','videoCarouse2'],'next')">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="forAreaAboveVideo">
+                        <p>Politics</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-5 textarea2">
+                    <h1>Welcome To The Best Model Winner Contest
+                        At Look Of The Year</h1>
+                    <small>Lorem ipsum amet cupidatat sint consectetur velit pariatur ullamco sit incididunt labore deserunt anim minim occaecat. Non laboris id reprehenderit voluptate velit esse sit commodo ut velit magna excepteur ex ut voluptate. Do aute minim reprehenderit ea consectetur commodo esse ut in sint veniam ut dolor dolore.</small>
+                </div>
+            </div>
+            <div class="col-lg-8 col-sm-12 offset-lg-5">
+                <div id="videoCarouse2" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6hgVihWjK2c?rel=0" width="150px" allowfullscreen=""></iframe>
+                                    <h4>Welcome To The Best Model Winner Contest
+                                    </h4>
+                                </div>
+                                <div class="col-sm-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6pxRHBw-k8M" width="150px" allowfullscreen=""></iframe>
+                                    <h4>Welcome To The Best Model Winner Contest
+                                    </h4>
+                                </div>
+                                <div class="col-sm-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oiKj0Z_Xnjc" width="150px" allowfullscreen=""></iframe>
+                                    <h4>Welcome To The Best Model Winner Contest
+                                    </h4>
+                                </div>
+                                <div class="col-sm-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/F-1weFCiYBA" width="150px" allowfullscreen=""></iframe>
+                                    <h4>Welcome To The Best Model Winner Contest
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/F-1weFCiYBA" width="150px" allowfullscreen=""></iframe>
+                                    <h4>Welcome To The Best Model Winner Contest
+                                    </h4>
+                                </div>
+                                <div class="col-sm-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6pxRHBw-k8M" width="150px" allowfullscreen=""></iframe>
+                                    <h4>Welcome To The Best Model Winner Contest
+                                    </h4>
+                                </div>
+                                <div class="col-sm-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IlvjAHlTjAY" width="150px" allowfullscreen=""></iframe>
+                                    <h4>Welcome To The Best Model Winner Contest
+                                    </h4>
+                                </div>
+                                <div class="col-sm-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6hgVihWjK2c?rel=0" width="150px" allowfullscreen=""></iframe>
+                                    <h4>Welcome To The Best Model Winner Contest
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/F-1weFCiYBA" width="150px" allowfullscreen="" llowfullscreena></iframe>
+                                    <h4>Welcome To The Best Model Winner Contest
+                                    </h4>
+                                </div>
+                                <div class="col-sm-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6pxRHBw-k8M" width="150px" allowfullscreen=""></iframe>
+                                    <h4>Welcome To The Best Model Winner Contest
+                                    </h4>
+                                </div>
+                                <div class="col-sm-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IlvjAHlTjAY" width="150px" allowfullscreen=""></iframe>
+                                    <h4>Welcome To The Best Model Winner Contest
+                                    </h4>
+                                </div>
+                                <div class="col-sm-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6hgVihWjK2c?rel=0" width="150px" allowfullscreen=""></iframe>
+                                    <h4>Welcome To The Best Model Winner Contest
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</body>
+
+</html>
