@@ -3,9 +3,6 @@
 
 <head>
     <title>Calender</title>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="js/calcultion.js"></script>
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -37,7 +34,7 @@
                 <p id="days"></p>
             </div>
             <!--select for months-->
-            <select name="month" id="mon" onChange="selectmonth(this);">
+            <select name="month" id="monthsRend" onChange="selectmonth(this);">
                 <option value="">Select Month</option>
             </select>
             <!--select for year-->
@@ -46,10 +43,16 @@
             </select>
             <div class="current-string">
                 <h3 id="date"></h3>
-                Have a happy day
+                <h3>Have a happy day</h3>
             </div>
         </div>
     </div>
+
+    <!--scripts-->
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/calcultion.js"></script>
 </body>
 
 </html>
