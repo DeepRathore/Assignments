@@ -30,7 +30,7 @@ body {
     background-color: #e99607;
     color: #fff;
     display: flex;
-    font-weight :bold;
+    font-weight: bold;
     justify-content: space-between;
     padding: 40px 30px;
     text-align: center;
@@ -40,13 +40,15 @@ body {
 .weekdays {
     background-color: #c88005;
     color: white;
-    padding: 10px 0;
+    padding: 14px;
 }
 
 .weekdays {
     #getDays {
-        padding-left: 30px;
-        word-spacing: 24.2px;
+    padding-left: 50px;
+    word-spacing: 25px;
+    display: flex;
+    justify-content: space-around;
 
     }
 }
@@ -56,6 +58,7 @@ body {
     flex-wrap: wrap;
     font-weight: 300;
     padding: 10px 0;
+
 }
 
 .weekdays div,
@@ -132,7 +135,7 @@ select {
         width: 100%;
 
         .calendar {
-            
+
             max-width: 100%;
 
 
