@@ -1,4 +1,3 @@
-
 header .logo {
     width: 210px;
     margin: 20px;
@@ -20,7 +19,7 @@ nav {
     margin-bottom: 40px;
     border-top: 1px solid rgba(0, 0, 0, 0.07);
     overflow: auto;
-    width: 1335px;
+    width: 1335px;  //go for 100%
     text-align: center;
     padding: 0px 0px 15px 130px;
     box-shadow: 0 4px 77px rgba(0, 0, 0, 0.09);
@@ -142,7 +141,7 @@ nav ul li .dropdown-content a {
 }
 
 .wrapper {
-    margin-left :145px;
+    margin-left: 145px;
 }
 
 
@@ -1010,7 +1009,7 @@ i {
         width: 150px;
         margin-top: -65px;
         visibility: visible;
-        margin-left: 0px;
+        margin-left: -20px;
     }
 
 }
