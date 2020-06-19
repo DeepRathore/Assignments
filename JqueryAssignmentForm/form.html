@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="offset-lg-1 mt-5">Form Validation Assignment of Jquery</h3>
+        <form class="col-lg-10 offset-1 p-5" id="formValid" name="formValid" action="#">
+            <div id="face-part" class="form-group">
+                <h4 class="text-primary">Your Face</h4>
+                <div>
+                    <label class="text-dark required">Choose Image:</label>
+                    <input type="file" id="image" name="image" value="image" accept="image/*" class="form-control" onchange="loadImg(event)"><br>
+                    <label class="text-dark">Image Preview : </label>
+                    <img id="frame" width="100px" height="100px" class="d-flex justify-content-end" />
+                </div>
+            </div>
+            <div id="Credentials" class="form-group">
+                <h4 class="text-primary mt-4">Your Credentials Details</h4>
+                <div>
+                    <label class="text-dark required" for="name">Name:</label><input type="text" id="name" name="name" placeholder="Enter your Name" class="form-control col-lg-12" autocomplete="off"><br>
+                    <p id="nameMessage"> </p>
+                    <label class="text-dark">Gender: </label>
+                    <input type="radio" id="male" name="gender" value="male">Male
+                    <input type="radio" id="female" name="gender" value="female">Female
+                    <input type="radio" id="other" name="gender" value="other">Other<br><br>
+                    <label for="age" class="text-dark required">Age: (Enter age between 1 to 100)</label><input type="text" id="age" name="age" placeholder="Enter Your Age" class="form-control col-lg-12" autocomplete="off"><br>
+                    <p id="ageMessage"></p>
+                    <label for="dob" class="text-dark required">Date Of Birth:</label><input type="date" id="dob" name="dob" class="form-control col-lg-12"><br></h1>
+                    <label class="text-dark required">Country</label>
+                    <select class="form-control" name="country" id="country">
+                        <option readonly value="item0">Select Country</option>
+                        <option value="India">India</option>
+                        <option value="America">America</option>
+                        <option value="China">China</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                    </select><br>
+                    <label class="text-dark">City : </label><select class="form-control" id="city" name="city">
+                        <option value="city">Choose any one</option>
+                    </select></br><br>
+                    <label class="text-dark">Favourite Colour :</label><input type="color" id="color" name="color" class="form-control col-lg-4"><br></h1>
+                    <div id="Indicators" class="form-group">
+                        <h4 class="text-primary">Your Indicators</h4><br>
+                        <div>
+                            <label for="salary" class="text-dark required">Salary : </label><input type="text" id="salary" class="form-control" name="salary" readonly style="border:0; color:#f6931f; font-weight:bold;"><br>
+                            <div id="slider-salary"></div>
+                        </div><br><br>
+                        <div>
+                            <label for="height" class="text-dark required">Height: </label><input type="text" id="height" class="form-control" readonly name="height" readonly style="border:0; color:#f6931f; font-weight:bold;"><br>
+                            <div id="slider-height"></div>
+                        </div>
+                        <div id="slider-height"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="Credentials" class="form-group">
+                <h4 class="text-primary mt-4">Your Contact Information</h4>
+                <div>
+                    <label class="text-dark required">Email :</label><input type="email" id="email" name="email" class="form-control col-lg-12" autocomplete="off" placeholder="Enter your Email Address"><br>
+                    <p id="message"></p>
+                </div>
+                <div>
+                    <label class="text-dark required">Mobile :</label>
+                    <select class="form-control" id="code" name="Country Code">
+                        <option value="code">--Country Code-- </option>
+                    </select>
+                    <input type="phone" id="phone" placeholder="Enter Phone Number" name="phone" class="form-control col-lg-12 "><br>
+                    <p id="phoneMessage"></p>
+                </div>
+                <div>
+                    <label class="text-dark required">Address :</label><input type="textarea" id="address" rows="40" cols="50" name="address" class="form-control col-lg-12" placeholder="Enter Address"><br>
+                </div>
+                <h4 class="text-primary">Method To Connect You: </h4>
+                <label for="connectOn" id="connect" name="ConnectOn" class="text-dark">Connect With :</label>
+                <input type="checkbox" id="emailcheck" name="ConnectOn" value="Email">Email
+                <input type="checkbox" id="whatsappcheck" value="whatsapp" name="ConnectOn">WhatsApp
+                <input type="checkbox" id="appcheck" name="ConnectOn" value="In-app-chat">In-app chat<br><br>
+            </div>
+            <input type="button" name="form[Submit]" id="submit" class="btn btn-success" value="Submit">
+            <p id="Values"></p>
+        </form>
+        <br><br><br>
+        <h2 id="recieved" class="text-center text-dark"></h2>
+        <h4 id="allValues" class="text-left text-danger offset-lg-4 p-lg-5"></h4>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

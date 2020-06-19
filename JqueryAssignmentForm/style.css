@@ -1,0 +1,18 @@
+body {
+    background-color: #c8d6e5;
+}
+
+.required:before {
+   content: '*';
+   color: red;
+}
+
+form {
+   background-color: white;
+   box-shadow:  0 0 10px black;
+   margin-top: 5%;
+}
+
+h3 {
+	color: #5f27cd;
+}
