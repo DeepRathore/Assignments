@@ -4,15 +4,20 @@ body {
 
 .required:before {
    content: '*';
-   color: red;
+   color: #FF0000;
 }
 
 form {
    background-color: white;
-   box-shadow:  0 0 10px black;
+   box-shadow:  0 0 10px #000000;
    margin-top: 5%;
 }
 
-h3 {
+h3{
 	color: #5f27cd;
+}
+
+#salary,#height {
+	color:#f6931f; 
+	font-weight:bold;
 }

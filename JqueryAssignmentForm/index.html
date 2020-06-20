@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="style.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
     <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
@@ -27,7 +27,8 @@
             <div id="Credentials" class="form-group">
                 <h4 class="text-primary mt-4">Your Credentials Details</h4>
                 <div>
-                    <label class="text-dark required" for="name">Name:</label><input type="text" id="name" name="name" placeholder="Enter your Name" class="form-control col-lg-12" autocomplete="off"><br>
+                    <label class="text-dark required" for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your first and last name" class="form-control col-lg-12" autocomplete="off"><br>
                     <p id="nameMessage"> </p>
                     <label class="text-dark">Gender: </label>
                     <input type="radio" id="male" name="gender" value="male">Male
@@ -39,7 +40,7 @@
                     <label class="text-dark required">Country</label>
                     <select class="form-control" name="country" id="country">
                         <option readonly value="item0">Select Country</option>
-                        <option value="India">India</option>
+                       <option value="India">India</option>
                         <option value="America">America</option>
                         <option value="China">China</option>
                         <option value="Japan">Japan</option>
@@ -53,11 +54,11 @@
                     <div id="Indicators" class="form-group">
                         <h4 class="text-primary">Your Indicators</h4><br>
                         <div>
-                            <label for="salary" class="text-dark required">Salary : </label><input type="text" id="salary" class="form-control" name="salary" readonly style="border:0; color:#f6931f; font-weight:bold;"><br>
+                            <label for="salary" class="text-dark required">Salary : </label><input type="text" id="salary" class="form-control" name="salary" readonly><br>
                             <div id="slider-salary"></div>
                         </div><br><br>
                         <div>
-                            <label for="height" class="text-dark required">Height: </label><input type="text" id="height" class="form-control" readonly name="height" readonly style="border:0; color:#f6931f; font-weight:bold;"><br>
+                            <label for="height" class="text-dark required">Height: </label><input type="text" id="height" class="form-control" readonly name="height" readonly><br>
                             <div id="slider-height"></div>
                         </div>
                         <div id="slider-height"></div>
@@ -83,9 +84,9 @@
                 </div>
                 <h4 class="text-primary">Method To Connect You: </h4>
                 <label for="connectOn" id="connect" name="ConnectOn" class="text-dark">Connect With :</label>
-                <input type="checkbox" id="emailcheck" name="ConnectOn" value="Email">Email
-                <input type="checkbox" id="whatsappcheck" value="whatsapp" name="ConnectOn">WhatsApp
-                <input type="checkbox" id="appcheck" name="ConnectOn" value="In-app-chat">In-app chat<br><br>
+                <input type="checkbox" id="emailcheck" name="Connect On" value="Email">Email
+                <input type="checkbox" id="whatsappcheck" value="whatsapp" name="Connect On">WhatsApp
+                <input type="checkbox" id="appcheck" name="Connect On" value="In-app-chat">In-app chat<br><br>
             </div>
             <input type="button" name="form[Submit]" id="submit" class="btn btn-success" value="Submit">
             <p id="Values"></p>
@@ -94,7 +95,7 @@
         <h2 id="recieved" class="text-center text-dark"></h2>
         <h4 id="allValues" class="text-left text-danger offset-lg-4 p-lg-5"></h4>
     </div>
-    <script src="main.js"></script>
+    <script src="assets/main.js"></script>
 </body>
 
 </html>
