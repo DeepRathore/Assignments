@@ -3,7 +3,8 @@ $(document).ready(function() {
         type: "GET",
         url: "https://api.covid19india.org/data.json",
         success: function(data) {
-        //data in India Map part
+
+            //data in India Map part
             var totalStateWiseData = (data.statewise);
             $("#tested").text(data.tested[103].totalsamplestested);
             $("#date").text(totalStateWiseData[0].lastupdatedtime);
@@ -11,10 +12,32 @@ $(document).ready(function() {
                 $("#Deceased").text(totalStateWiseData[0].deaths),
                 $("#recovered").text(totalStateWiseData[0].recovered),
                 $("#active").text(totalStateWiseData[0].active);
-        
-        //table of state information
-            var text, con, act, rec, dec = '';
+
+            //search area   
             var totallength = totalStateWiseData.length;
+            $("#button").click(function() {
+                var EnteredValue = $('.search').val();
+                for (var i = 0; i <= totallength; i++) {
+                    var result = JSON.stringify(totalStateWiseData[i].state).replace(/"/g, "");
+                    if (result.toLowerCase() == EnteredValue.toLowerCase()) {
+                        let states = "<div>" + (JSON.stringify(totalStateWiseData[i].state)).replace(/"/g, "") + "</div>";
+                        let confirmed = "<div>" + (JSON.stringify(totalStateWiseData[i].confirmed)).replace(/"/g, "") + "</div>";
+                        let act = "<div>" + (JSON.stringify(totalStateWiseData[i].active)).replace(/"/g, "") + "</div>";
+                        let recovered = "<div>" + JSON.stringify(totalStateWiseData[i].recovered).replace(/"/g, "") + "</div>";
+                        let deseased = "<div>" + JSON.stringify(totalStateWiseData[i].deaths).replace(/"/g, "") + "</div>";
+                        let update = "<div>" + JSON.stringify(totalStateWiseData[i].lastupdatedtime).replace(/"/g, "") + "</div>";
+                        $('.NameState').html(states);
+                        $('.conState').html("Confirmed" + confirmed);
+                        $('.actState').html("Ativate" + act);
+                        $('.recState').html("Recovered" + recovered);
+                        $('.decState').html("Deseaced" + deseased);
+                        $('.update').html("Updated Last" + update);
+                    }
+                }
+            });
+
+            //table of state information
+            var text, con, act, rec, dec = '';
             for (var i = 0; i <= totallength; i++) {
                 let states = "<tr>";
                 let confirmed = "<tr>";
@@ -37,61 +60,22 @@ $(document).ready(function() {
         }
     });
 
-    //search area
-    $.ajax({
-        type: "GET",
-        url: "https://api.covid19india.org/data.json",
-        success: function(data) {
-            var totalStateWiseData = (data.statewise);
-            var totallength = totalStateWiseData.length;
-            var result = '';
-            $("#button").click(function() {
-                var EnteredValue = $('.search').val();
-                for (var i = 0; i <= totallength; i++) {
-                    all = totalStateWiseData[i].state;
-                    let states = "";
-                    let confirmed = '';
-                    let act = "";
-                    let recovered = "";
-                    let deseased = "";
-                    let update = "";
-                    result = JSON.stringify(totalStateWiseData[i].state).replace(/"/g, "");
-                    if (result.toLowerCase() == EnteredValue.toLowerCase()) {
-                        states = "<div>"+(JSON.stringify(totalStateWiseData[i].state)).replace(/"/g, "")+"</div>";
-                        confirmed = "<div>"+(JSON.stringify(totalStateWiseData[i].confirmed)).replace(/"/g, "")+"</div>" ;
-                        act = "<div>"+(JSON.stringify(totalStateWiseData[i].active)).replace(/"/g, "")+"</div>";
-                        recovered = "<div>"+JSON.stringify(totalStateWiseData[i].recovered).replace(/"/g, "")+"</div>";
-                        deseased = "<div>"+JSON.stringify(totalStateWiseData[i].deaths).replace(/"/g, "")+"</div>" ;
-                        update = "<div>"+JSON.stringify(totalStateWiseData[i].lastupdatedtime).replace(/"/g, "")+"</div>";
-                        $('.NameState').html(states);
-                        $('.conState').html("Confirmed"+confirmed);
-                        $('.actState').html("Ativate"+act);
-                        $('.recState').html("Recovered"+recovered);
-                        $('.decState').html("Deseaced"+deseased);
-                        $('.update').html("Updated Last"+update);
-                    }
-                }
-            });
-        }
-    });
-
     //autocompletes
     var availableTags = ['Total', 'Maharashtra', 'Tamil Nadu', 'Delhi', 'Gujarat', 'Uttar Pradesh',
-        "Rajasthan", "West Bengal", "Madhya Pradesh", "Haryana", "Karnataka", "Andhra Pradesh", "Bihar",
-        "Telangana", "Jammu and Kashmir", "Assam", "Odisha", "Punjab", "Kerala", "Uttarakhand", "Chhattisgarh",
-        "Jharkhand", "Tripura", "Ladakh", "Goa", "Himachal Pradesh", "Manipur", "Chandigarh", "Puducherry",
-        "Nagaland", "Mizoram", "Arunachal Pradesh", "Sikkim", "Dadra and Nagar Haveli and Daman and Diu",
-        "Andaman and Nicobar Islands", "Meghalaya", "Lakshadweep"
-    ];
+        'Rajasthan', 'West Bengal', 'Madhya Pradesh', 'Haryana', 'Karnataka', 'Andhra Pradesh', 'Bihar',
+        'Telangana', 'Jammu and Kashmir', 'Assam', 'Odisha', 'Punjab', 'Kerala', 'Uttarakhand', 'Chhattisgarh',
+        'Jharkhand', 'Tripura', 'Ladakh', 'Goa', 'Himachal Pradesh', 'Manipur', 'Chandigarh', 'Puducherry',
+        'Nagaland', 'Mizoram', 'Arunachal Pradesh', 'Sikkim', 'Dadra and Nagar Haveli and Daman and Diu',
+        'Andaman and Nicobar Islands', 'Meghalaya', 'Lakshadweep'];
 
     $("#search").autocomplete({
         source: availableTags
     });
-    //triggering Enter key while search
- $("#search").keyup(function (e) {
-    if (e.which == 13) {
-      $('#button').trigger('click');
-    }
-  });
-});
 
+    //triggering Enter key while search
+    $("#search").keyup(function(e) {
+        if (e.which == 13) {
+            $('#button').trigger('click');
+        }
+    });
+});

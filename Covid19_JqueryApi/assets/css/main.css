@@ -3,16 +3,18 @@ body {
   font-family: 'Pangolin', cursive;
   font-size: 20px; }
 
-#Mapstatus {
-  font-size: 30px; }
-  #Mapstatus .head {
-    text-align: center; }
-  #Mapstatus h5 {
-    float: left;
-    padding: 14px; }
+#Mapstatus .head {
+  text-align: center;
+  color: #8ddcee; }
+#Mapstatus h5 {
+  float: left;
+  padding: 12px; }
 
 .state {
   margin-top: 5%; }
+
+.lastUpdated {
+  color: #8ddcee; }
 
 #search {
   background-color: #1e272e;

@@ -8,19 +8,23 @@ body {
 }
 
 #Mapstatus {
- font-size :30px;
     .head {
         text-align: center;
+        color :#8ddcee;
     }
 
     h5 {
         float: left;
-        padding: 14px;
+        padding: 12px;
     }
 }
 
 .state {
     margin-top: 5%;
+}
+
+.lastUpdated {
+	color :#8ddcee;
 }
 
 #search {
