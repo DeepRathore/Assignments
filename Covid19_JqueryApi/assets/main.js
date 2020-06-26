@@ -18,14 +18,14 @@ $(document).ready(function() {
             $("#button").click(function() {
                 var EnteredValue = $('.search').val();
                 for (var i = 0; i <= totallength; i++) {
-                    var result = JSON.stringify(totalStateWiseData[i].state).replace(/"/g, "");
+                    var result = (totalStateWiseData[i].state).replace(/"/g, "");
                     if (result.toLowerCase() == EnteredValue.toLowerCase()) {
-                        let states = "<div>" + (JSON.stringify(totalStateWiseData[i].state)).replace(/"/g, "") + "</div>";
-                        let confirmed = "<div>" + (JSON.stringify(totalStateWiseData[i].confirmed)).replace(/"/g, "") + "</div>";
-                        let act = "<div>" + (JSON.stringify(totalStateWiseData[i].active)).replace(/"/g, "") + "</div>";
-                        let recovered = "<div>" + JSON.stringify(totalStateWiseData[i].recovered).replace(/"/g, "") + "</div>";
-                        let deseased = "<div>" + JSON.stringify(totalStateWiseData[i].deaths).replace(/"/g, "") + "</div>";
-                        let update = "<div>" + JSON.stringify(totalStateWiseData[i].lastupdatedtime).replace(/"/g, "") + "</div>";
+                        let states = "<div>" + (totalStateWiseData[i].state).replace(/"/g, "") + "</div>";
+                        let confirmed = "<div>" + (totalStateWiseData[i].confirmed).replace(/"/g, "") + "</div>";
+                        let act = "<div>" + (totalStateWiseData[i].active).replace(/"/g, "") + "</div>";
+                        let recovered = "<div>" + (totalStateWiseData[i].recovered).replace(/"/g, "") + "</div>";
+                        let deseased = "<div>" +(totalStateWiseData[i].deaths).replace(/"/g, "") + "</div>";
+                        let update = "<div>" + (totalStateWiseData[i].lastupdatedtime).replace(/"/g, "") + "</div>";
                         $('.NameState').html(states);
                         $('.conState').html("Confirmed" + confirmed);
                         $('.actState').html("Ativate" + act);
@@ -44,11 +44,11 @@ $(document).ready(function() {
                 let active = "<tr>";
                 let recovered = "<tr>";
                 let deseased = "<tr>";
-                states += "<td>" + JSON.stringify(totalStateWiseData[i].state).replace(/"/g, "") + "</td>";
-                confirmed += "<td>" + JSON.stringify(totalStateWiseData[i].confirmed).replace(/"/g, "") + "</td>";
-                active += "<td>" + JSON.stringify(totalStateWiseData[i].active).replace(/"/g, "") + "</td>";
-                recovered += "<td>" + JSON.stringify(totalStateWiseData[i].recovered).replace(/"/g, "") + "</td>";
-                deseased += "<td>" + JSON.stringify(totalStateWiseData[i].deaths).replace(/"/g, "") + "</td>";
+                states += "<td>" + (totalStateWiseData[i].state).replace(/"/g, "") + "</td>";
+                confirmed += "<td>" + (totalStateWiseData[i].confirmed).replace(/"/g, "") + "</td>";
+                active += "<td>" +(totalStateWiseData[i].active).replace(/"/g, "") + "</td>";
+                recovered += "<td>" +(totalStateWiseData[i].recovered).replace(/"/g, "") + "</td>";
+                deseased += "<td>" +(totalStateWiseData[i].deaths).replace(/"/g, "") + "</td>";
                 text += states;
                 con += confirmed;
                 act += active;
