@@ -22,20 +22,21 @@
                     <input type="search" id="search" class="col-lg-9 form-control search"><br>
                     <span class="btn" type="button" id="button"><i class="fa fa-search"></i></span>
                 </div>
-                <div class="NameState"></div>
+                <div class="nameState"></div>
                 <div class="searchedInformation">
-                    <div class="conState text-danger"></div>
-                    <div class="actState text-primary"></div>
-                    <div class="recState text-success"></div>
-                    <div class="decState text-info"></div>
+                    <div class="confirmState text-danger"></div>
+                    <div class="activeState text-primary"></div>
+                    <div class="recoveredState text-success"></div>
+                    <div class="deceasedState text-info"></div>
                     <div class="update text-warning"></div>
                 </div>
+                <div class="stateNote text-secondary mb-5"></div>
                 <div class="lastUpdated">
                     <h4>Last Update of Total Data</h4>
                     <p class="text-secondary" id="date"></p>
                 </div>
             </div>
-            <div class="col-lg-6" id="Mapstatus">
+            <div class="col-lg-6 col-sm-12" id="mapStatus">
                 <div class="head">
                     <h2>India</h2>
                     <p>Updated Information of Covid</p>
@@ -58,24 +59,28 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-10 state2">
+            <div class="col-lg-10 state2 col-sm-12">
                 <div>
                     <table id="stateWise" class="table table-dark table-striped table-bordered table-hover ">
                         <p class="text-light">Compiled from State Govt</p>
+                        <thead>
                         <tr>
-                            <th class="text-warning">State/UT</th>
-                            <th class="text-warning">Confirmed</th>
-                            <th class="text-warning">Active</th>
-                            <th class="text-warning">Recovered</th>
-                            <th class="text-warning">Deseased</th>
+                            <th>State/UT</th>
+                            <th>Confirmed</th>
+                            <th>Active</th>
+                            <th>Recovered</th>
+                            <th>Deseased</th>
                         </tr>
+                        </thead>
+                         <tbody> 
                         <tr scope="row">
-                            <td id="Name"></td>
+                            <td id="name"></td>
                             <td id="con"></td>
                             <td id="act"></td>
                             <td id="rec"></td>
-                            <td id="dec"></td>
+                            <td id="dec"></td>	
                         </tr>
+                         </tbody>
                     </table>
                 </div>
             </div>
