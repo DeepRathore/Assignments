@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Form</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
     <link href="assets/css/main.css" rel="stylesheet">
-    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"/>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                 <div>
                     <p>
                         <label for="cname " class="required">Name</label>
-                        <input id="cname" name="name" type="text" class="cname form-control" required>
+                        <input id="cname" name="name" type="text" class="cname form-control" autocomplete="off" required>
                     </p>
                     <label class="text-dark">Gender: </label>
                     <input type="radio" id="male" name="gender" value="male">Male
@@ -37,14 +37,8 @@
                     <input type="text" id="age" name="age" placeholder="Enter Your Age" class=" form-control" autocomplete="off" class="age"><br><br>
                     <label for="dob" class="text-dark required">Date Of Birth:</label><input type="date" id="dob" name="dob" class="form-control col-lg-12"><br></h1>
                     <label class="text-dark required">Country</label>
-                    <select class="form-control" name="country" id="country">
-                        <option readonly value="item0">Select Country</option>
-                        <option value="India">India</option>
-                        <option value="America">America</option>
-                        <option value="China">China</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Australia">Australia</option>
-                        <option value="Sri Lanka">Sri Lanka</option>
+                    <select class="form-control" name="country" id="country" class="options">
+                        <option readonly value="">Select Country</option>
                     </select><br>
                     <label class="text-dark">City : </label><select class="form-control" id="city" name="city">
                         <option value="city">Choose any one</option>

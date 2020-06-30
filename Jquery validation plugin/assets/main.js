@@ -1,6 +1,10 @@
+data = ['India', 'America', 'China'];
+city = $('#city');
+code = $('#code');
+
 $(document).ready(function() {
     $('#formValid').validate({
-        errorClass: 'my-error-class',
+        errorClass: 'error',
         rules: {
             age: {
                 required: true,
@@ -46,7 +50,7 @@ $(document).ready(function() {
         }
     });
 
-    $('#salary').val('Rs.' + $(sliderSalary).slider('value'));
+    $('#salary').val('Rs.' + (sliderSalary).slider('value'));
     $('#slider-height').slider({
         value: 150,
         min: 0,
@@ -56,34 +60,28 @@ $(document).ready(function() {
             $('#height').val(ui.value + 'cm');
         }
     });
-    $('#height').val($(sliderHeight).slider('value') + 'cm');
-	
-	//select country code and states based on country chosen
+    $('#height').val((sliderHeight).slider('value') + 'cm');
+
+    //Country names
+    $.each(data, function(key, value) {
+        $('#country').append($("<option></option>").attr("value", key).text(value));
+    });
+
+    //select country code and states based on country chosen
     $('#country').change(function() {
-        var city = $('#city');
-        var code = $('#code');
-        var val = $(this).val();
-        if (val == "India") {
-            $(city).html("<option>Mumbai</option><option>Delhi</option><option>Indore</option");
-            $(code).html("<div>+91</div>");
-        } else if (val == "America") {
-            $(code).html("<div>+1</div>");
-            $(city).html("<option>New York</option><option>Los Angeles</option><option>Chicago</option>");
-        } else if (val == "China") {
-            $(code).html("<div>+86</div>");
-            $(city).html("<option>Beijing</option><option>Guangzhou</option><option>Taipei</option");
-        } else if (val == "Japan") {
-            $(code).html("<div>+81</div>");
-            $(city).html("<option> Tokyo</option><option>Guangzhou</option><option>Gold Coast</option");
-        } else if (val == "Australia") {
-            $(code).html("<div>+61</div>");
-            $(city).html("<option>Sydney</option><option>Melbourne</option><option>Osaka</option");
-        } else if (val == "Sri Lanka") {
-            $(code).html("<div>+94</div>");
-            $(city).html("<option>Colombo</option><option>Moratuwa</option><option>Jaffna</option");
-        } else if (val == "item0") {
-            $(code).html("<div value=''>--Country Code--</div>");
-            $(city).html("<option value=''>--select one--</option>");
+        switch ($('#country').val()) {
+            case '0':
+                $(city).html("<option>Mumbai</option><option>Indore</option");
+                $(code).html("<div>+91</div>");
+                break;
+            case '1':
+                $(city).html("<option>New York</option><option>Los Angeles</option>");
+                $(code).html("<div>+1</div>");
+                break;
+            case '2':
+                $(city).html("<option>Beijing</option><option>Guangzhou</option>");
+                $(code).html("<option>+81</option>");
+                break;
         }
     });
 
@@ -101,7 +99,7 @@ $(document).ready(function() {
         $('#recieved').html('Inputs Received As Following :')
         var x = $('form').serializeArray();
         $.each(x, function(i, field) {
-            $('#allValues').append(', ' + field.name + ' : ' +
+            $('#allValues').append('<br>' + field.name + ' : ' +
                 field.value + '');
         });
     });

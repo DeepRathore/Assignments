@@ -3,41 +3,43 @@ body {
 }
 
 .required:before {
-   content: '*';
-   color: #FF0000;
+    content: '*';
+    color: #FF0000;
 }
 
 form {
-   background-color: white;
-   box-shadow:  0 0 10px #000000;
-   margin-top: 2%;
+    background-color: white;
+    box-shadow: 0 0 10px #000000;
+    margin-top: 2%;
 }
 
-h3{
-	color: #5f27cd;
+h3 {
+    color: #5f27cd;
 }
 
-#salary,#height {
-	color:#f6931f; 
-	font-weight:bold;
+#salary,
+#height {
+    color: #f6931f;
+    font-weight: bold;
 }
 
-input[type="radio"],input[type="checkbox"] {
-  margin-left: 23px;
+input[type="radio"],
+input[type="checkbox"] {
+    margin-left: 23px;
 }
 
 .phoneNumber {
-	display: flex;
+    display: flex;
 
-  #code {
-   width:50px;
-  }
+    #code {
+        width: 50px;
+    }
 }
 
-.my-error-class {
-    color:red;
+.error {
+    color: red;
 }
 
-#allValues{
-  color: #5f27cd;
+#allValues {
+    color: #5f27cd;
 }
