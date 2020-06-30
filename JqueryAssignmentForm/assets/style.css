@@ -21,3 +21,15 @@ h3{
 	color:#f6931f; 
 	font-weight:bold;
 }
+
+input[type="radio"],input[type="checkbox"] {
+  margin-left: 23px;
+}
+
+.phoneNumber {
+	display: flex;
+}
+
+.Validated{
+	color: #008000;
+}

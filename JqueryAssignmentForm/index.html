@@ -28,8 +28,8 @@
                 <h4 class="text-primary mt-4">Your Credentials Details</h4>
                 <div>
                     <label class="text-dark required" for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your first and last name" class="form-control col-lg-12" autocomplete="off"><br>
-                    <p id="nameMessage"> </p>
+                    <input type="text" id="name" name="name" placeholder="Enter your first and last name"autocomplete="off" class="form-control col-lg-12"><br>
+                    <p id="nameMessage"></p>
                     <label class="text-dark">Gender: </label>
                     <input type="radio" id="male" name="gender" value="male">Male
                     <input type="radio" id="female" name="gender" value="female">Female
@@ -40,7 +40,7 @@
                     <label class="text-dark required">Country</label>
                     <select class="form-control" name="country" id="country">
                         <option readonly value="item0">Select Country</option>
-                       <option value="India">India</option>
+                        <option value="India">India</option>
                         <option value="America">America</option>
                         <option value="China">China</option>
                         <option value="Japan">Japan</option>
@@ -73,11 +73,13 @@
                 </div>
                 <div>
                     <label class="text-dark required">Mobile :</label>
-                    <select class="form-control" id="code" name="Country Code">
-                        <option value="code">--Country Code-- </option>
-                    </select>
-                    <input type="phone" id="phone" placeholder="Enter Phone Number" name="phone" class="form-control col-lg-12 "><br>
-                    <p id="phoneMessage"></p>
+                    <div class="phoneNumber">
+                        <select class="form-control col-lg-2" id="code" name="Country Code">
+                            <option value="code">Code</option>
+                        </select>
+                        <input type="phone" id="phone" placeholder="Enter Phone Number" name="phone" class="form-control col-lg-10"><br>
+                    </div>
+                    <p id="phoneMessage"></p><br>
                 </div>
                 <div>
                     <label class="text-dark required">Address :</label><input type="textarea" id="address" rows="40" cols="50" name="address" class="form-control col-lg-12" placeholder="Enter Address"><br>
