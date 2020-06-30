@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     $('#formValid').validate({
         errorClass: 'my-error-class',
@@ -48,7 +47,6 @@ $(document).ready(function() {
     });
 
     $('#salary').val('Rs.' + $(sliderSalary).slider('value'));
-
     $('#slider-height').slider({
         value: 150,
         min: 0,
@@ -59,8 +57,8 @@ $(document).ready(function() {
         }
     });
     $('#height').val($(sliderHeight).slider('value') + 'cm');
-
-    //select country code and states based on country chosen
+	
+	//select country code and states based on country chosen
     $('#country').change(function() {
         var city = $('#city');
         var code = $('#code');
@@ -88,6 +86,7 @@ $(document).ready(function() {
             $(city).html("<option value=''>--select one--</option>");
         }
     });
+
     //disabling submit button
     $('input').on('keyup', function() {
         if ($("#formValid").valid()) {
@@ -106,9 +105,8 @@ $(document).ready(function() {
                 field.value + '');
         });
     });
-
 });
 
 //to set the image preview
-var loadImg = (event) => 
-$('#frame').attr('src', URL.createObjectURL(event.target.files[0]));
+var loadImg = (event) =>
+    $('#frame').attr('src', URL.createObjectURL(event.target.files[0]));
