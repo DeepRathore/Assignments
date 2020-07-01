@@ -40,7 +40,7 @@ $(document).ready(function() {
             //table of state information
             var states, confirmed, active, recovered, deseased = '';
             for (var i = 0; i <= totalLength; i++) {
-                states += '<tr><td>' + (totalStateWiseData[i].state) +  '</td></tr>';
+                states += '<tr><td>' + (totalStateWiseData[i].state) +'</td></tr>';
                 confirmed += '<tr><td>' + (totalStateWiseData[i].confirmed) + '</td></tr>';
                 active += '<tr><td>' + (totalStateWiseData[i].active) +  '</td></tr>';
                 recovered += '<tr><td>'+ (totalStateWiseData[i].recovered) + '</td></tr>';
