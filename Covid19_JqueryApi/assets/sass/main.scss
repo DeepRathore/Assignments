@@ -7,7 +7,7 @@ body {
 
 }
 
-#mapStatus {
+#map-status {
     .head {
         text-align: center;
         color: #8ddcee;
@@ -23,7 +23,7 @@ body {
     margin-top: 5%;
 }
 
-.lastUpdated {
+.last-updated {
     color: #8ddcee;
     margin-top: 5%;
     margin-bottom: 10%;
@@ -44,7 +44,7 @@ body {
     width: 340px;
 }
 
-.searchedInformation {
+.searched-information {
     display: flex;
     margin-top: 20%;
     position: relative;
@@ -55,7 +55,7 @@ body {
     }
 }
 
-.nameState {
+.name-state {
     color: #e1e0cf;
     font-size: 30px;
     margin-top: 10%;
@@ -63,7 +63,7 @@ body {
     padding: 14px;
 }
 
-.searchArea {
+.search-area {
     display: flex;
     flex-direction: row;
 
@@ -83,7 +83,7 @@ body {
 
 }
 
-#stateWise {
+#state-wise {
     tr {
         th {
             color: #f2a63c;

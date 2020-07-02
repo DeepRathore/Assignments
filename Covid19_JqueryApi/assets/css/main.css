@@ -3,17 +3,17 @@ body {
   font-family: 'Pangolin', cursive;
   font-size: 20px; }
 
-#mapStatus .head {
+#map-status .head {
   text-align: center;
   color: #8ddcee; }
-#mapStatus h5 {
+#map-status h5 {
   float: left;
   padding: 12px; }
 
 .state {
   margin-top: 5%; }
 
-.lastUpdated {
+.last-updated {
   color: #8ddcee;
   margin-top: 5%;
   margin-bottom: 10%; }
@@ -31,24 +31,24 @@ body {
   padding: 10px;
   width: 340px; }
 
-.searchedInformation {
+.searched-information {
   display: flex;
   margin-top: 20%;
   position: relative; }
-  .searchedInformation div {
+  .searched-information div {
     padding: 20px; }
 
-.nameState {
+.name-state {
   color: #e1e0cf;
   font-size: 30px;
   margin-top: 10%;
   position: absolute;
   padding: 14px; }
 
-.searchArea {
+.search-area {
   display: flex;
   flex-direction: row; }
-  .searchArea #button {
+  .search-area #button {
     background: #2196F3;
     border: none;
     cursor: pointer;
@@ -56,10 +56,10 @@ body {
     font-size: 17px;
     padding: 10px;
     width: 10%; }
-  .searchArea #button:hover {
+  .search-area #button:hover {
     background: #0b7dda; }
 
-#stateWise tr th {
+#state-wise tr th {
   color: #f2a63c; }
 
 /*# sourceMappingURL=main.css.map */

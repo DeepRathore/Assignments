@@ -16,7 +16,7 @@ $(document).ready(function() {
             var totalLength = totalStateWiseData.length;
             $('#button').click(function() {
                 var enteredValue = $('.search').val();
-                for (var i = 0; i <= totalLength; i++) {
+                for (let i = 0; i <= totalLength; i++) {
                     var result = (totalStateWiseData[i].state);
                     if (result.toLowerCase() == enteredValue.toLowerCase()) {
                         let states = '<div>' + (totalStateWiseData[i].state) + '</div>';
@@ -26,30 +26,30 @@ $(document).ready(function() {
                         let deseased = '<div>' + (totalStateWiseData[i].deaths) + '</div>';
                         let update = '<div>' + (totalStateWiseData[i].lastupdatedtime) + '</div>';
                         let note = '<div>' + (totalStateWiseData[i].statenotes) + '</div>';
-                        $('.nameState').html(states);
-                        $('.confirmState').html('Confirmed' + confirmed);
-                        $('.activeState').html('Ativate' + act);
-                        $('.recoveredState').html('Recovered' + recovered);
-                        $('.deceasedState').html('Deseaced' + deseased);
+                        $('.name-state').html(states);
+                        $('.confirm-state').html('Confirmed' + confirmed);
+                        $('.active-state').html('Ativate' + act);
+                        $('.recovered-state').html('Recovered' + recovered);
+                        $('.deceased-state').html('Deseaced' + deseased);
                         $('.update').html('Updated Last' + update);
-                        $('.stateNote').html(note);
+                        $('.state-note').html(note);
                     }
                 }
             });
 
             //table of state information
             var states, confirmed, active, recovered, deseased = '';
-            for (var i = 0; i <= totalLength; i++) {
+            for (let i = 0; i <= totalLength; i++) {
                 states += '<tr><td>' + (totalStateWiseData[i].state) +'</td></tr>';
                 confirmed += '<tr><td>' + (totalStateWiseData[i].confirmed) + '</td></tr>';
                 active += '<tr><td>' + (totalStateWiseData[i].active) +  '</td></tr>';
                 recovered += '<tr><td>'+ (totalStateWiseData[i].recovered) + '</td></tr>';
                 deseased += '<tr><td>' + (totalStateWiseData[i].deaths) +  '</td></tr>';
                 $('#name').html(states);
-                $('#con').html(confirmed);
-                $('#act').html(active);
-                $('#rec').html(recovered);
-                $('#dec').html(deseased);
+                $('#confirmed-list').html(confirmed);
+                $('#active-list').html(active);
+                $('#recovered-list').html(recovered);
+                $('#deceased-list').html(deseased);
             }
         }
     });

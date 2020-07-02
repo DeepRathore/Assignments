@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
-    <link rel="stylesheet" href="/resources/demos/style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="assets/css/main.css" rel="stylesheet"/>
@@ -18,25 +17,25 @@
         <div class="row mt-5">
             <div class="col-lg-6">
                 <h4 class="text-light">Search your States Here</h4>
-                <div class="searchArea">
+                <div class="search-area">
                     <input type="search" id="search" class="col-lg-9 form-control search"><br>
                     <span class="btn" type="button" id="button"><i class="fa fa-search"></i></span>
                 </div>
-                <div class="nameState"></div>
-                <div class="searchedInformation">
-                    <div class="confirmState text-danger"></div>
-                    <div class="activeState text-primary"></div>
-                    <div class="recoveredState text-success"></div>
-                    <div class="deceasedState text-info"></div>
+                <div class="name-state"></div>
+                <div class="searched-information">
+                    <div class="confirm-state text-danger"></div>
+                    <div class="active-state text-primary"></div>
+                    <div class="recovered-state text-success"></div>
+                    <div class="deceased-state text-info"></div>
                     <div class="update text-warning"></div>
                 </div>
-                <div class="stateNote text-secondary mb-5"></div>
-                <div class="lastUpdated">
+                <div class="state-note text-secondary mb-5"></div>
+                <div class="last-updated">
                     <h4>Last Update of Total Data</h4>
                     <p class="text-secondary" id="date"></p>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12" id="mapStatus">
+            <div class="col-lg-6 col-sm-12" id="map-status">
                 <div class="head">
                     <h2>India</h2>
                     <p>Updated Information of Covid</p>
@@ -61,7 +60,7 @@
         <div class="row">
             <div class="col-lg-10 state2 col-sm-12">
                 <div>
-                    <table id="stateWise" class="table table-dark table-striped table-bordered table-hover ">
+                    <table id="state-wise" class="table table-dark table-striped table-bordered table-hover ">
                         <p class="text-light">Compiled from State Govt</p>
                         <thead>
                             <tr>
@@ -75,10 +74,10 @@
                         <tbody>
                             <tr scope="row">
                                 <td id="name"></td>
-                                <td id="con"></td>
-                                <td id="act"></td>
-                                <td id="rec"></td>
-                                <td id="dec"></td>
+                                <td id="confirmed-list"></td>
+                                <td id="active-list"></td>
+                                <td id="recovered-list"></td>
+                                <td id="deceased-list"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -89,8 +88,8 @@
     </div>
     <!--Scripts used-->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="assets/main.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/main.js"></script>
 </body>
 
 </html>
