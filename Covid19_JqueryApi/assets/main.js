@@ -38,18 +38,13 @@ $(document).ready(function() {
             });
 
             //table of state information
-            var states, confirmed, active, recovered, deseased = '';
             for (let i = 0; i <= totalLength; i++) {
-                states += '<tr><td>' + (totalStateWiseData[i].state) +'</td></tr>';
-                confirmed += '<tr><td>' + (totalStateWiseData[i].confirmed) + '</td></tr>';
-                active += '<tr><td>' + (totalStateWiseData[i].active) +  '</td></tr>';
-                recovered += '<tr><td>'+ (totalStateWiseData[i].recovered) + '</td></tr>';
-                deseased += '<tr><td>' + (totalStateWiseData[i].deaths) +  '</td></tr>';
-                $('#name').html(states);
-                $('#confirmed-list').html(confirmed);
-                $('#active-list').html(active);
-                $('#recovered-list').html(recovered);
-                $('#deceased-list').html(deseased);
+                let totalData = '';
+                totalData += '<tr><td>' + (totalStateWiseData[i].state) + '</td><td>' +
+                    (totalStateWiseData[i].confirmed) + '</td><td>' + (totalStateWiseData[i].active) +
+                    '</td><td>' + (totalStateWiseData[i].recovered) + '</td><td>' + (totalStateWiseData[i].deaths) 
+                    +'</td></tr>';
+                $('#state-wise').append(totalData);
             }
         }
     });
